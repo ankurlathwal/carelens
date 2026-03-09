@@ -15,7 +15,7 @@ export default function WalletScreen({ navigate }: Props) {
   ]
 
   return (
-    <div style={{ paddingTop: 48 }}>
+    <div className="screen-inner">
       <button onClick={() => navigate('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'DM Sans', sans-serif", color: '#8B6E4E', fontSize: 14, marginBottom: 32, display: 'flex', alignItems: 'center', gap: 6 }}>← Back</button>
 
       <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: '#3A7BE8', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600, marginBottom: 12 }}>Tool 2</div>
@@ -23,7 +23,7 @@ export default function WalletScreen({ navigate }: Props) {
       <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: '#6B4F35', marginBottom: 40 }}>Mum's Level 3 Home Care Package — January 2025</p>
 
       {/* Summary Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginBottom: 32 }}>
+      <div className="wallet-cards" style={{ marginBottom: 32 }}>
         {summaryCards.map(({ label, value, sub, color }) => (
           <div key={label} style={{ background: '#fff', borderRadius: 16, padding: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', borderTop: `3px solid ${color}` }}>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: '#8B6E4E', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8 }}>{label}</div>

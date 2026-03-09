@@ -23,7 +23,7 @@ export default function HomeScreen({ navigate }: Props) {
   return (
     <div>
       {/* Hero */}
-      <div style={{ textAlign: 'center', padding: '72px 0 56px' }}>
+      <div className="hero-section">
         <div style={{
           display: 'inline-block',
           background: 'rgba(232,121,58,0.1)',
@@ -91,10 +91,7 @@ export default function HomeScreen({ navigate }: Props) {
       </div>
 
       {/* Stats Bar */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: 1,
+      <div className="grid-3" style={{
         background: 'rgba(139,110,78,0.1)',
         borderRadius: 16,
         overflow: 'hidden',
@@ -112,7 +109,7 @@ export default function HomeScreen({ navigate }: Props) {
       <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 32, fontWeight: 700, marginBottom: 8, textAlign: 'center' }}>Four tools. One mission.</h2>
       <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: '#8B6E4E', textAlign: 'center', marginBottom: 36 }}>Everything families need to feel confident about aged care funding.</p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 20, marginBottom: 64 }}>
+      <div className="grid-2" style={{ marginBottom: 64 }}>
         {features.map((f) => (
           <div
             key={f.id}
@@ -151,10 +148,8 @@ export default function HomeScreen({ navigate }: Props) {
       </div>
 
       {/* Why This Wins */}
-      <div style={{
+      <div className="why-wins" style={{
         background: 'linear-gradient(135deg, #1A1208 0%, #2D1F0A 100%)',
-        borderRadius: 24,
-        padding: '52px 48px',
         color: '#fff',
         textAlign: 'center',
       }}>

@@ -20,10 +20,10 @@ export default function TranslateScreen({ navigate }: Props) {
   }
 
   return (
-    <div style={{ paddingTop: 48 }}>
+    <div className="screen-inner">
       <button onClick={() => navigate('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'DM Sans', sans-serif", color: '#8B6E4E', fontSize: 14, marginBottom: 32, display: 'flex', alignItems: 'center', gap: 6 }}>← Back</button>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'start' }}>
+      <div className="split-2">
         <div>
           <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: '#E8793A', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600, marginBottom: 12 }}>Tool 1</div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 40, fontWeight: 900, lineHeight: 1.1, marginBottom: 16 }}>Statement<br />Translator</h2>

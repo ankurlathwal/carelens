@@ -28,7 +28,7 @@ export default function App() {
     }}>
       <Header activeScreen={activeScreen} navigate={navigate} />
 
-      <div className={animateIn ? 'fade-in' : ''} style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px 60px' }}>
+      <div className={`page-content${animateIn ? ' fade-in' : ''}`}>
         {activeScreen === 'home' && <HomeScreen navigate={navigate} />}
         {activeScreen === 'translate' && <TranslateScreen navigate={navigate} />}
         {activeScreen === 'wallet' && <WalletScreen navigate={navigate} />}

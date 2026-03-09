@@ -40,7 +40,7 @@ export default function Header({ activeScreen, navigate }: Props) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: 8 }}>
+      <div className="header-nav">
         {navItems.map(({ label, screen }) => (
           <button
             key={label}
